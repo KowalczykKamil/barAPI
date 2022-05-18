@@ -66,7 +66,7 @@ const {verifyJwt, verifyTokenAndAuthorization, verifyTokenAndAdmin} = require(".
 
    
 
-        //GET bills by date
+        //Get bills by date
       router.get("/billByDate", verifyTokenAndAdmin, async (req, res) => {
       
         try {
