@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const BarmanSchema = new mongoose.Schema(
+const BartenderSchema = new mongoose.Schema(
     {
         studentId:{type:String, required:true},
         drinks:[{
@@ -13,9 +13,9 @@ const BarmanSchema = new mongoose.Schema(
             }
         }
     ],
-      amount:{type:Number, required:true},
+
       status:{type:String, default:"In preparation."},
     },
     {timestamps:true}
 )
-module.exports = mongoose.model("Barman", BarmanSchema);
+module.exports = mongoose.model("Bartender", BartenderSchema);
