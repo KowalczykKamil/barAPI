@@ -5,6 +5,7 @@ const authorizationRoute = require("./routes/authoriaztion");
 const studentRoute = require("./routes/student");
 const drinkRoute = require("./routes/drink");
 const bartenderRoute = require("./routes/bartender");
+const billRoute = require("./routes/bill");
 
 
 const app = express();
@@ -25,6 +26,7 @@ app.use("/api/authorization", authorizationRoute);
 app.use("/api/students", studentRoute);
 app.use("/api/drinks", drinkRoute);
 app.use("/api/bartender", bartenderRoute);
+app.use("/api/bills", billRoute);
 
 
 
